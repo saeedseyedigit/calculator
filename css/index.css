@@ -26,19 +26,22 @@ main{
  
 }
 
-#textShower{
+
+.textarea{
     max-width: 896px;
     width: 100%;
-    display: block;
-    margin: auto;
+
     height: 300px;
-    outline: none;
-    border: none;
+
     background-color: var(--txtBackground);
-}
-.textarea{
-    width: 100%;
+    margin: auto;
    padding-top: 80px;
+   display: flex;
+   padding: 20px;
+   justify-content: end;
+   align-content: flex-end;
+   position: relative;
+
 }
 .buttons{
     max-width: 896px;
@@ -68,9 +71,41 @@ main{
 }
 
 #textShower{
-    font-size: 1.3rem;
+   font-size: 1.3rem;
    direction: ltr;
    padding: 10px;
-   display: flex;
-   justify-content: end;
+   height: 50px;
+   background-color: var(--txtBackground);
+   width: 95%;
+   outline: none;
+   border: none;
+   position: absolute;
+   bottom: 30px;
+
+}
+.buttons{
+    display: grid;
+    grid-template-rows: 1.1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-areas: 
+    ". . . . . . . . m m"
+    "s s f f f n n n o o"
+    "s s f f f n n n o o"
+    "s s f f f n n n o o"
+    "s s f f f n n n o o";
+}
+.modifires{
+    grid-area: m;
+}
+.oprators{
+    grid-area: o;
+}
+.nums{
+    grid-area: n;
+}
+.opfunctons{
+    grid-area: f;
+}
+.sixers{
+    grid-area: s;
 }
