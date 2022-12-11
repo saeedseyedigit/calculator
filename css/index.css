@@ -9,8 +9,10 @@
    --txtBackground:#cce5ff;
    --regularBtn:#cbe6ff;
    --cntBtn:#a2d1f8;
+   --cntBtnhover:#85c5fa;
    --deleteBtn:#ff97a8;
    --textColor:#2C4B69;
+   --regularBtnClick:#67abe2;
 }
 body{
 
@@ -61,19 +63,34 @@ main{
     height: 62px;
     margin :10px 10px 10px 10px ;
     background-color: var(--regularBtn);
+    
+}
+.inputBtn:hover{
+    background-color: var(--cntBtn);
+}
+.inputBtn:active{
+    background-color:var(--regularBtnClick) ;
 }
 .cntBtn{
 
     background-color: var(--cntBtn);
 }
 
+.cntBtn:hover{
+
+    background-color: var(--cntBtnhover);
+}
+.cntBtn:active{
+
+    background-color: var(--regularBtnClick);
+}
 .redBtn{
     color: white;
     background-color: var(--deleteBtn);
 }
 
 #textShower{
-   font-size: 1.3rem;
+   font-size: 1.7rem;
    direction: ltr;
    padding: 10px;
    height: 50px;
@@ -145,4 +162,16 @@ main{
 }
 .sde6{
     grid-area: i; 
+}
+.inputBtn img{
+    width: 70%;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+.opfunctons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.numcon{
+    background-color: var(--cntBtn);
 }
