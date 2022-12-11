@@ -26,7 +26,9 @@ main{
  
 }
 
-
+.hex{
+    padding-top: 60px;
+}
 .textarea{
     max-width: 896px;
     width: 100%;
@@ -108,4 +110,39 @@ main{
 }
 .sixers{
     grid-area: s;
+}
+
+.oprators{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+
+    grid-template-areas: 
+    "a b "
+    "c d"
+    "h i"
+    "e e"
+    ;
+}
+.equlBtn{
+    width: auto;
+    grid-area: e;
+}
+.sde1{
+    grid-area: a; 
+}
+.sde2{
+    grid-area: b; 
+}
+.sde3{
+    grid-area:c; 
+}
+.sde4{
+    grid-area: d; 
+}
+.sde5{
+    grid-area: h; 
+}
+.sde6{
+    grid-area: i; 
 }
